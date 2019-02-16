@@ -18,7 +18,7 @@ function currentLine(deliLine) {
   var line = "The line is currently: ";
   if(deliLine.length > 0){
     for(var i = 0; i < deliLine.length; i++){
-      line += `${i+1}. ${deliLine[i]}`;
+      line += `${i+1}. ${deliLine[i]}, `;
     }
     return line;
   }
