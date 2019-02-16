@@ -7,7 +7,7 @@ function nowServing(deliLine) {
   if(deliLine.length > 0){
     var firstInLine = deliLine[0]
     delete deliLine[0]
-    return firstInLine
+    return `Currently serving ${firstInLine}`
   }
   else {
     return "There is nobody waiting to be served!"
