@@ -6,7 +6,7 @@ function takeANumber(deliLine, newName) {
 function nowServing(deliLine) {
   if(deliLine.length > 0){
     var firstInLine = deliLine[0]
-    deliLine.slice(1)
+    deliLine.shift()
     return `Currently serving ${firstInLine}.`
   }
   else {
